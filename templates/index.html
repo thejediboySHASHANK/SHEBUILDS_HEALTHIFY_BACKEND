@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>Get Healthy!</title>
+
+    <!-- Bootstrap Scripts  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+        </script>
+
+    <!-- GOOGLE FONT SCRIPTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../static/css/styles.css">
+
+    <script>
+        if ({ pred1 } < 18.5) {
+            const BMI = document.getElementById("BMI")
+            BMI.innerHTML = "Underweight!"
+        }
+    </script>
+</head>
+
+<body>
+    <h1 class="res">Results Page</h1>
+    <br>
+    <div class="BMI" id="BMI">
+        <div class="row">
+            <div class="bmi col-lg-6 md-6 sm-12">
+                {{pred1}}
+                <p class="BMR">{{pred2}}</p>
+                <p class="para">Basal metabolic rate is the number of calories your body needs to accomplish its most basic (basal) life-sustaining functions.</p>
+
+            </div>
+            <div class="col-lg-6 md-6 sm-12">
+                <img width="500px;" src="https://1.bp.blogspot.com/-Bpxrq83cDXk/YHQTNhLAtWI/AAAAAAAAA3Y/xQ-7E-erYzcL2wlcMutgeNDWM4zLO1GTQCNcBGAsYHQ/s727/bmi-categories.jpg"
+                    alt="bmi.jpg">
+
+            </div>
+        </div>
+        <!-- <p>Your estimated BMI is : {{pred1}}</p> -->
+    </div>
+    <!-- <div class="BMR" id="BMR">
+        {{pred2}}
+    </div> -->
+    <div class="Cal" id="Calories">
+        <u>{{pred3}} <p>for maintaining the current weight</p></u><br>
+    </div>
+    <div class="weight">
+        {{pred_mild}} <p>for Mild Weight Loss (0.25kg/week)</p><br>
+        {{pred_loss}} <p>for Weight Loss (0.5kg/week)</p><br>
+        {{pred_extreme}} <p>for Extreme Weight Loss (1kg/week)</p>
+    </div>
+    <br>
+    <div>
+        <p class="note">
+            Please consult with a doctor when losing 1 kg or more per week since it requires that you consume less than the minimum recommendation of 1,200 calories a day.
+        </p>
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
